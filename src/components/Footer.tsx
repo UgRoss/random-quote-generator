@@ -3,9 +3,9 @@ import styled from 'styled-components';
 
 export const FooterWrapper = styled.footer`
   margin-top: 1rem;
-  color: #a9a9a9;
   padding: 1rem;
-  font-family: 'Montserrat', sans-serif;
+  color: ${(props) => props.theme.mutedTextColor};
+  font-family: ${(props) => props.theme.secondaryFontFamily};
   text-align: center;
 
   small {

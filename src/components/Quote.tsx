@@ -2,7 +2,7 @@ import * as React from 'react';
 import styled from 'styled-components';
 
 const BlockQuote = styled.blockquote`
-  border-left: 8px solid #f7df94;
+  border-left: 8px solid ${(props) => props.theme.primaryColor};
   padding-left: 100px;
   margin: 50px 0;
 `;

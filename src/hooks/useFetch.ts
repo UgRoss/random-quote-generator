@@ -7,13 +7,16 @@ export const useFetch = (url: string, options?: RequestInit) => {
 
   const fetchData = async () => {
     setIsLoading(true);
+    setError(null);
+
     try {
       const res = await fetch(url, options);
       const json = await res.json();
       setResponse(json);
-      setIsLoading(false);
     } catch (error) {
       setError(error);
+    } finally {
+      setIsLoading(false);
     }
   };
 

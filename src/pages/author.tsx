@@ -3,6 +3,7 @@ import { useParams, useHistory } from 'react-router-dom';
 import { Layout } from '../components/Layout';
 import { Quote } from '../components/Quote';
 import { Loader } from '../components/Loader';
+import { ErrorAlert } from '../components/ErrorAlert';
 import { useFetch } from '../hooks/useFetch';
 
 export const AuthorPage: React.FC = () => {
@@ -15,8 +16,9 @@ export const AuthorPage: React.FC = () => {
   return (
     <Layout onRandomClick={() => history.push('/')}>
       <h1>{authorName}</h1>
+      {error && <ErrorAlert />}
       {isLoading && <Loader />}
-      {!isLoading && response?.quotes.map(({ quoteText, _id }) => <Quote content={quoteText} key={_id} />)}
+      {!isLoading && !error && response?.quotes.map(({ quoteText, _id }) => <Quote content={quoteText} key={_id} />)}
     </Layout>
   );
 };

@@ -31,7 +31,7 @@ const QuoteAuthorWrapper = styled(Link)`
   }
 
   small {
-    color: #828282;
+    color: ${(props) => props.theme.mutedTextColor};
   }
 
   svg {

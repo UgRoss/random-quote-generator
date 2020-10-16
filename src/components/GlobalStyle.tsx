@@ -1,4 +1,5 @@
 import { createGlobalStyle } from 'styled-components';
+import { theme } from '../theme.config';
 import 'normalize.css';
 
 export const GlobalStyle = createGlobalStyle`
@@ -14,6 +15,7 @@ export const GlobalStyle = createGlobalStyle`
     font-family: 'Raleway', sans-serif;
     font-weight: 500;
     font-size: .8rem;
+    color: ${theme.textColor};
   }
 
   small {
