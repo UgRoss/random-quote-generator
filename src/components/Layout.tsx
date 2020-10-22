@@ -7,7 +7,10 @@ const LayoutWrapper = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  width: 100%;
+  max-width: 1400px;
   min-height: 100vh;
+  margin: 0 auto;
 
   main {
     display: flex;
@@ -20,14 +23,13 @@ const LayoutWrapper = styled.div`
 `;
 
 interface LayoutProps {
-  readonly onRandomClick: (e: React.MouseEvent<HTMLAnchorElement>) => void;
-  readonly showHeader?: boolean;
+  readonly onRandomClick?: (e: React.MouseEvent<HTMLAnchorElement>) => void;
 }
 
-export const Layout: React.FC<LayoutProps> = ({ children, onRandomClick, showHeader = true }) => {
+export const Layout: React.FC<LayoutProps> = ({ children, onRandomClick }) => {
   return (
     <LayoutWrapper>
-      {showHeader && <Header onRandomClick={onRandomClick} />}
+      {onRandomClick && <Header onRandomClick={onRandomClick} />}
       <main>{children}</main>
       <Footer />
     </LayoutWrapper>

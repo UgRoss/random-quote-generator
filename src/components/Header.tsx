@@ -1,15 +1,18 @@
 import * as React from 'react';
 import styled from 'styled-components';
-import { RandomLink } from './RandomLink';
+import { RandomQuoteLink } from './RandomQuoteLink';
 
 const HeaderWrapper = styled.header`
-  padding: 1.5rem 100px;
-  max-width: 1400px;
-`;
+  padding: 1.5rem;
 
-const HeaderNav = styled.nav`
-  display: flex;
-  justify-content: flex-end;
+  @media ${({ theme }) => theme.sizes.tablet} {
+    padding: 1.5rem 5rem;
+  }
+
+  nav {
+    display: flex;
+    justify-content: flex-end;
+  }
 `;
 
 interface HeaderProps {
@@ -18,8 +21,8 @@ interface HeaderProps {
 
 export const Header: React.FC<HeaderProps> = ({ onRandomClick }) => (
   <HeaderWrapper>
-    <HeaderNav>
-      <RandomLink onClick={onRandomClick} />
-    </HeaderNav>
+    <nav>
+      <RandomQuoteLink onClick={onRandomClick} />
+    </nav>
   </HeaderWrapper>
 );

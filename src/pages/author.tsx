@@ -6,12 +6,16 @@ import { Loader } from '../components/Loader';
 import { ErrorAlert } from '../components/ErrorAlert';
 import { useFetch } from '../hooks/useFetch';
 
+interface AuthorPageRouterParams {
+  authorName: string;
+}
+
 export const AuthorPage: React.FC = () => {
-  let { authorName } = useParams();
+  const { authorName } = useParams<AuthorPageRouterParams>();
   const history = useHistory();
 
   const authorUrl = `https://quote-garden.herokuapp.com/api/v2/authors/${authorName}?page=1&limit=3`;
-  const { response, error, isLoading, refetch } = useFetch(authorUrl);
+  const { response, error, isLoading } = useFetch(authorUrl);
 
   return (
     <Layout onRandomClick={() => history.push('/')}>

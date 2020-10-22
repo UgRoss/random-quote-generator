@@ -4,8 +4,8 @@ import styled from 'styled-components';
 export const FooterWrapper = styled.footer`
   margin-top: 1rem;
   padding: 1rem;
-  color: ${(props) => props.theme.mutedTextColor};
-  font-family: ${(props) => props.theme.secondaryFontFamily};
+  color: ${({ theme }) => theme.colors.mutedText};
+  font-family: ${({ theme }) => theme.secondaryFontFamily};
   text-align: center;
 
   small {

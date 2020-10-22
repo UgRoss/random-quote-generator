@@ -6,19 +6,23 @@ import { GlobalStyle } from './components/GlobalStyle';
 import { theme } from './theme.config';
 import { IndexPage } from './pages/index';
 import { AuthorPage } from './pages/author';
+import { NotFound } from './pages/NotFound';
 
 const App: React.FC = () => {
   return (
     <>
       <ThemeProvider theme={theme}>
         <GlobalStyle />
-        <Router>
+        <Router basename="/random-quote-generator">
           <Switch>
-            <Route path="/author/:authorName">
+            <Route exact path="/author/:authorName">
               <AuthorPage />
             </Route>
-            <Route path="/">
+            <Route exact path="/">
               <IndexPage />
+            </Route>
+            <Route>
+              <NotFound />
             </Route>
           </Switch>
         </Router>

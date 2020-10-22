@@ -10,6 +10,30 @@ const QuoteAuthorWrapper = styled(Link)`
   position: relative;
   margin-top: 50px;
 
+  p {
+    font-size: 24px;
+    transition: all 0.4s;
+    color: ${({ theme }) => theme.colors.secondaryText};
+    font-weight: 800;
+    margin: 0 0 8px;
+  }
+
+  small {
+    color: ${({ theme }) => theme.colors.mutedText};
+  }
+
+  svg {
+    opacity: 0;
+    transition: all 0.4s;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    fill: #fff;
+    width: 25px;
+    height: 25px;
+    right: 25px;
+  }
+
   &:hover {
     background-color: #333333;
 
@@ -20,30 +44,6 @@ const QuoteAuthorWrapper = styled(Link)`
     svg {
       opacity: 1;
     }
-  }
-
-  p {
-    font-size: 24px;
-    transition: all 0.4s;
-    color: #4f4f4f;
-    font-weight: 800;
-    margin: 0 0 8px;
-  }
-
-  small {
-    color: ${(props) => props.theme.mutedTextColor};
-  }
-
-  svg {
-    opacity: 0;
-    transition: all 0.3s;
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    fill: #fff;
-    width: 25px;
-    height: 25px;
-    right: 25px;
   }
 `;
 

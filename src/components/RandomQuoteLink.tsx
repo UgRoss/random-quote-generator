@@ -1,34 +1,33 @@
 import * as React from 'react';
 import styled from 'styled-components';
-import { darken } from 'polished';
 import RefreshIcon from '../assets/refresh-icon.svg';
 
 interface LinkProps {
   onClick: (e: React.MouseEvent<HTMLAnchorElement>) => void;
 }
 
-const StyledRandomLink = styled.a<LinkProps>`
-  color: ${(props) => props.theme.textColor};
+const StyledRandomLink = styled.a`
+  color: ${({ theme }) => theme.colorrs.text};
   text-decoration: none;
   display: flex;
   align-items: center;
   transition: all 0.4s;
 
   &:hover {
-    color: ${(props) => props.theme.primaryColor};
+    color: ${({ theme }) => theme.colors.primary};
     svg {
-      fill: ${(props) => props.theme.primaryColor};
+      fill: ${({ theme }) => theme.colors.primary};
     }
   }
 
   svg {
     transition: all 0.4s;
-    fill: ${(props) => props.theme.textColor};
+    fill: ${({ theme }) => theme.colors.text};
     margin: 0 5px;
   }
 `;
 
-export const RandomLink: React.FC<LinkProps & React.HTMLAttributes<HTMLAnchorElement>> = ({
+export const RandomQuoteLink: React.FC<LinkProps & React.HTMLAttributes<HTMLAnchorElement>> = ({
   children,
   onClick,
   ...props

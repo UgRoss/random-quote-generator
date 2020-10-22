@@ -22,7 +22,7 @@ export const Loader = styled.div`
     height: 64px;
     margin: 8px;
     border-radius: 50%;
-    border: 6px solid ${(props) => props.theme.primaryColor};
+    border: 6px solid ${({ theme }) => theme.colors.primary};
     border-left-color: transparent;
     border-right-color: transparent;
     animation: ${ringAnimation} 1.2s linear infinite;

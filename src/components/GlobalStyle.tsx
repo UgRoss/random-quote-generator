@@ -8,14 +8,20 @@ export const GlobalStyle = createGlobalStyle`
   }
 
   html {
-    font-size: 20px;
+    font-size: 16px;
+  }
+
+  @media (min-width: 720px) {
+    html {
+      font-size: 20px;
+    }
   }
 
   body {
     font-family: 'Raleway', sans-serif;
     font-weight: 500;
     font-size: .8rem;
-    color: ${theme.textColor};
+    color: ${theme.colors.text};
   }
 
   small {

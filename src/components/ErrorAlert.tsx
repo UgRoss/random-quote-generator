@@ -5,7 +5,7 @@ const AlertWrapper = styled.div`
   margin: 2rem 0.5rem;
   padding: 1rem;
   padding-left: 2rem;
-  border-left: 0.2rem solid ${(props) => props.theme.errorColor};
+  border-left: 0.2rem solid ${({ theme }) => theme.colors.error};
 
   h2 {
     margin-top: 0;
