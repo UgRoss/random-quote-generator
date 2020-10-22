@@ -51,6 +51,7 @@ Introduce your projects by taking a screenshot or a gif. Try to tell visitors a 
 <!-- This section should list any major frameworks that you built your project using. Here are a few examples.-->
 
 - [⚛️ React](https://reactjs.org/)
+- [🛠 TypeScript](https://www.typescriptlang.org/)
 - [📦 Parcel](https://parceljs.org/)
 - [💅 styled-components](https://styled-components.com/)
 
