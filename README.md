@@ -1,6 +1,4 @@
-<!-- Please update value in the {}  -->
-
-<h1 align="center">{QUOTE GENERATOR}</h1>
+<h1 align="center">QUOTE GENERATOR</h1>
 
 <div align="center">
    Solution for a challenge from  <a href="http://devchallenges.io" target="_blank">Devchallenges.io</a>.
@@ -38,13 +36,6 @@
 ## Overview
 
 ![screenshot](https://user-images.githubusercontent.com/5703885/96178894-bee20200-0f38-11eb-9a6f-b7681ec107de.png)
-
-Introduce your projects by taking a screenshot or a gif. Try to tell visitors a story about your project by answering:
-
-- Where can I see your demo?
-- What was your experience?
-- What have you learned/improved?
-- Your wisdom? :)
 
 ### Built With
 
