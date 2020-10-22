@@ -2,7 +2,7 @@ import * as React from 'react';
 import styled from 'styled-components';
 
 const BlockQuote = styled.blockquote`
-  border-left: 8px solid ${({ theme }) => theme.colors.primaryColor};
+  border-left: 8px solid ${({ theme }) => theme.colors.primary};
   padding-left: 2rem;
 
   @media ${({ theme }) => theme.sizes.tablet} {

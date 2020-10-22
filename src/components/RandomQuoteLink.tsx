@@ -7,7 +7,7 @@ interface LinkProps {
 }
 
 const StyledRandomLink = styled.a`
-  color: ${({ theme }) => theme.colorrs.text};
+  color: ${({ theme }) => theme.colors.text};
   text-decoration: none;
   display: flex;
   align-items: center;
