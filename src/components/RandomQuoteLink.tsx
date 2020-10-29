@@ -1,10 +1,6 @@
-import * as React from 'react';
-import styled from 'styled-components';
-import RefreshIcon from '../assets/refresh-icon.svg';
-
-interface LinkProps {
-  onClick: (e: React.MouseEvent<HTMLAnchorElement>) => void;
-}
+import * as React from "react";
+import styled from "styled-components";
+import RefreshIcon from "../assets/refresh-icon.svg";
 
 const StyledRandomLink = styled.a`
   color: ${({ theme }) => theme.colors.text};
@@ -27,11 +23,13 @@ const StyledRandomLink = styled.a`
   }
 `;
 
-export const RandomQuoteLink: React.FC<LinkProps & React.HTMLAttributes<HTMLAnchorElement>> = ({
-  children,
-  onClick,
-  ...props
-}) => {
+interface LinkProps {
+  onClick: (e: React.MouseEvent<HTMLAnchorElement>) => void;
+}
+
+export const RandomQuoteLink: React.FC<
+  LinkProps & React.HTMLAttributes<HTMLAnchorElement>
+> = ({ onClick, ...props }) => {
   const handleClick = (e: React.MouseEvent<HTMLAnchorElement>) => {
     e.preventDefault();
     onClick(e);

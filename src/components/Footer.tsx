@@ -13,7 +13,7 @@ export const FooterWrapper = styled.footer`
   }
 `;
 
-export const Footer = () => (
+export const Footer: React.FunctionComponent = () => (
   <FooterWrapper>
     <small>Ross @ DevChallenges.io</small>
   </FooterWrapper>

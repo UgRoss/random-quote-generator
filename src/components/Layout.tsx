@@ -1,7 +1,7 @@
-import * as React from 'react';
-import styled from 'styled-components';
-import { Header } from './Header';
-import { Footer } from './Footer';
+import * as React from "react";
+import styled from "styled-components";
+import { Header } from "./Header";
+import { Footer } from "./Footer";
 
 const LayoutWrapper = styled.div`
   display: flex;
@@ -26,7 +26,10 @@ interface LayoutProps {
   readonly onRandomClick?: (e: React.MouseEvent<HTMLAnchorElement>) => void;
 }
 
-export const Layout: React.FC<LayoutProps> = ({ children, onRandomClick }) => {
+export const Layout: React.FunctionComponent<LayoutProps> = ({
+  children,
+  onRandomClick,
+}) => {
   return (
     <LayoutWrapper>
       {onRandomClick && <Header onRandomClick={onRandomClick} />}

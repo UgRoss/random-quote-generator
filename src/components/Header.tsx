@@ -1,6 +1,6 @@
-import * as React from 'react';
-import styled from 'styled-components';
-import { RandomQuoteLink } from './RandomQuoteLink';
+import * as React from "react";
+import styled from "styled-components";
+import { RandomQuoteLink } from "./RandomQuoteLink";
 
 const HeaderWrapper = styled.header`
   padding: 1.5rem;
@@ -19,7 +19,9 @@ interface HeaderProps {
   onRandomClick: (e: React.MouseEvent<HTMLAnchorElement>) => void;
 }
 
-export const Header: React.FC<HeaderProps> = ({ onRandomClick }) => (
+export const Header: React.FunctionComponent<HeaderProps> = ({
+  onRandomClick,
+}) => (
   <HeaderWrapper>
     <nav>
       <RandomQuoteLink onClick={onRandomClick} />

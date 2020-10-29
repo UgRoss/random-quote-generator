@@ -1,5 +1,5 @@
-import * as React from 'react';
-import styled from 'styled-components';
+import * as React from "react";
+import styled from "styled-components";
 
 const BlockQuote = styled.blockquote`
   border-left: 8px solid ${({ theme }) => theme.colors.primary};
@@ -12,7 +12,11 @@ const BlockQuote = styled.blockquote`
   margin: 50px 0;
 `;
 
-export const Quote = ({ content }) => {
+interface QuoteProps {
+  content: string;
+}
+
+export const Quote: React.FunctionComponent<QuoteProps> = ({ content }) => {
   return (
     <BlockQuote className="Quote">
       <h1>{content}</h1>

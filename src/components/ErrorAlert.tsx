@@ -1,5 +1,5 @@
-import * as React from 'react';
-import styled from 'styled-components';
+import * as React from "react";
+import styled from "styled-components";
 
 const AlertWrapper = styled.div`
   margin: 2rem 0.5rem;
@@ -16,7 +16,7 @@ const AlertWrapper = styled.div`
   }
 `;
 
-export const ErrorAlert = () => {
+export const ErrorAlert: React.FunctionComponent = () => {
   return (
     <AlertWrapper>
       <h2>Oops! Something went wrong.</h2>
