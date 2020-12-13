@@ -1,28 +1,14 @@
-<h1 align="center">QUOTE GENERATOR</h1>
+# QUOTE GENERATOR
 
-<div align="center">
-   Solution for a challenge from  <a href="http://devchallenges.io" target="_blank">Devchallenges.io</a>.
-</div>
+_Solution for a challenge from [Devchallenges.io](http://devchallenges.io)_
 
-<div align="center">
-  <h3>
-    <a href="https://ugross.github.io/random-quote-generator/">
-      Demo
-    </a>
-    <span> | </span>
-    <a href="https://github.com/UgRoss/random-quote-generator">
-      Solution
-    </a>
-    <span> | </span>
-    <a href="https://devchallenges.io/challenges/8Y3J4ucAMQpSnYTwwWW8">
-      Challenge
-    </a>
-  </h3>
-</div>
+- ⚡️ **[Demo](https://ugross.github.io/random-quote-generator/)**
+- ✅ **[Solution](https://github.com/UgRoss/random-quote-generator)**
+- 🔗 **[Challenge](https://devchallenges.io/challenges/8Y3J4ucAMQpSnYTwwWW8)**
 
 <!-- TABLE OF CONTENTS -->
 
-## Table of Contents
+### Table of Contents
 
 - [Overview](#overview)
   - [Built With](#built-with)
@@ -33,11 +19,11 @@
 
 <!-- OVERVIEW -->
 
-## Overview
+### Overview
 
 ![screenshot](https://user-images.githubusercontent.com/5703885/96178894-bee20200-0f38-11eb-9a6f-b7681ec107de.png)
 
-### Built With
+#### Built With
 
 <!-- This section should list any major frameworks that you built your project using. Here are a few examples.-->
 
@@ -46,14 +32,13 @@
 - [📦 Parcel](https://parceljs.org/)
 - [💅 styled-components](https://styled-components.com/)
 
-## Features
+### Features
 
 <!-- List the features of your application or follow the template. Don't share the figma file here :) -->
 
 This application/site was created as a submission to a [DevChallenges](https://devchallenges.io/challenges) challenge. The [challenge](https://devchallenges.io/challenges/8Y3J4ucAMQpSnYTwwWW8) was to build an application to complete the given user stories.
 
-
-## How To Use
+### How To Use
 
 <!-- For example: -->
 
@@ -70,7 +55,7 @@ $ npm install
 $ npm start
 ```
 
-## Contact
+### Contact
 
 - Website [ugross.dev](https://ugross.dev)
 - GitHub [@UgRoss](https://github.com/UgRoss)
