@@ -1,5 +1,7 @@
 # QUOTE GENERATOR
 
+![website status](https://img.shields.io/website?up_message=UP&url=https%3A%2F%2Fugross.github.io%2Frandom-quote-generator%2F) [![Codacy Badge](https://app.codacy.com/project/badge/Grade/c93f97a714be4c10a666c4915c707c96)](https://www.codacy.com/gh/UgRoss/random-quote-generator/dashboard?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=UgRoss/random-quote-generator&amp;utm_campaign=Badge_Grade)
+
 _Solution for a challenge from [Devchallenges.io](http://devchallenges.io)_
 
 - ⚡️ **[Demo](https://ugross.github.io/random-quote-generator/)**
