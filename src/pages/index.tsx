@@ -1,19 +1,14 @@
-import * as React from "react";
-import { Layout } from "../components/Layout";
-import { Quote } from "../components/Quote";
-import { QuoteAuthor } from "../components/QuoteAuthor";
-import { Loader } from "../components/Loader";
-import { ErrorAlert } from "../components/ErrorAlert";
-import { useFetch } from "../hooks/useFetch";
+import * as React from 'react';
+import { Layout } from '../components/Layout';
+import { Quote } from '../components/Quote';
+import { QuoteAuthor } from '../components/QuoteAuthor';
+import { Loader } from '../components/Loader';
+import { ErrorAlert } from '../components/ErrorAlert';
+import { useRandomQuoteAPI } from '../hooks/useRandomQuoteAPI';
 
 export const IndexPage: React.FunctionComponent = () => {
-  const { response, error, isLoading, refetch } = useFetch<{
-    quote: { quoteAuthor: string; quoteGenre: string; quoteText: string };
-  }>("https://quote-garden.herokuapp.com/api/v2/quotes/random");
-
-  const {
-    quote: { quoteAuthor, quoteGenre, quoteText },
-  } = response ?? { quote: {} };
+  const { response, error, isLoading, refetch } = useRandomQuoteAPI();
+  const { quoteAuthor, quoteGenre, quoteText } = response?.data[0] ?? {};
 
   return (
     <Layout onRandomClick={refetch}>
